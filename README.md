@@ -10,12 +10,12 @@ Tests are one of the best forms of code documentation, but are often hard to rea
   (test “get a localized version of their name”     
     :given [user (->User “Brad” “Cypert”)]
     :when (getLocalizedName user)
-    :expect “Brad Cypert”
+    :expect “Brad Cypert”)
   
   (test “update their last name”
     :given [user (->User “Frank” “Jonson”)]
     :when (setLastName user “Johnson”)
-    :expect (= (getLastName user) “Johnson”)))
+    :expect (= (getLastName user) “Johnson”))
 
 (suite “Tests about the number 4”
   (test “4 should always equal 4”
