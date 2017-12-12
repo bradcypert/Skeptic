@@ -4,6 +4,8 @@ Given-When style testing for Clojure.
 
 Tests are one of the best forms of code documentation, but are often hard to read or even comprehend. Structuring your tests as documentation gives you the best of both worlds.
 
+[![Build Status](https://travis-ci.org/bradcypert/Skeptic.svg?branch=master)](https://travis-ci.org/bradcypert/Skeptic)
+
 ## Usage
 ```clojure
 (suite “Users should be able to”
