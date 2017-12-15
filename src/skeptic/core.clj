@@ -12,7 +12,6 @@
 ;      :when    (setLastName user “Johnson”)
 ;      :expect  (= (getLastName user) “Johnson”)})
 
-
 (defmacro test
   "skeptic.test/test
    (test-name options)
@@ -31,4 +30,4 @@
     (nil?  expectf#) (throw (ex-info (:no-expect errors) {:expect expectf#}))
     :default `(let ~givenf#
                ~whenf#
-               (assert ~expectf# (str ~test-name " failed the given expectation: " ~@expectf#))))))
+               (assert ~expectf# (str ~test-name " failed the given expectation: " (quote ~expectf#)))))))
