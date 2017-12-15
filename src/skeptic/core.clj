@@ -7,10 +7,10 @@
 (defn- human-to-kebab [s]
   (clojure.string/replace s #" " "-"))
 
-;(test “update their last name” {
+;(test “update their last name”
 ;      :given   [user (->User “Frank” “Jonson”)]
 ;      :when    (setLastName user “Johnson”)
-;      :expect  (= (getLastName user) “Johnson”)})
+;      :expect  (= (getLastName user) “Johnson”))
 
 (defmacro test
   "skeptic.test/test
