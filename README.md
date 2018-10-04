@@ -26,5 +26,4 @@ Tests are one of the best forms of code documentation, but are often hard to rea
 
 ## License
 
-Copyright © 2016 Brad Cypert
-MIT
+Copyright © 2018 Brad Cypert EPL
