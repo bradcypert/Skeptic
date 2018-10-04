@@ -28,6 +28,7 @@
         expectf# (:expect options)]
   (cond
     (nil?  expectf#) (throw (ex-info (:no-expect errors) {:expect expectf#}))
+    (and (nil? givenf#) (nil? whenf#)) `(assert ~expectf# (str ~test-name " failed the given expectation: " (quote ~expectf#)))
     :default `(let ~givenf#
                ~whenf#
                (assert ~expectf# (str ~test-name " failed the given expectation: " (quote ~expectf#)))))))
