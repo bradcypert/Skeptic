@@ -22,8 +22,6 @@ Tests are one of the best forms of code documentation, but are often hard to rea
     :given [a 4]
     :expect (= a 4)))
 ```
-## Roadmap
-https://trello.com/b/E2XSRQKk
 
 ## License
 
